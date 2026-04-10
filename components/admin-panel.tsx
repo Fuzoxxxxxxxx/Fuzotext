@@ -30,8 +30,6 @@ export function AdminPanel({ initialTexts, userEmail }: AdminPanelProps) {
   const router = useRouter()
   const supabase = createClient()
 
-  const maxChars = 2000
-
   useEffect(() => {
     const savedTheme = localStorage.getItem('fuzoxx-theme') as 'light' | 'dark' | null
     if (savedTheme) {
